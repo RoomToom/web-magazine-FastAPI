@@ -1,0 +1,78 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє переносити картки на новий рядок */
+    gap: 50px; /* Відстань між картками */
+    justify-content: center; /* Вирівнює картки по центру */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    flex: 1 1 calc(30% - 40px); /* Розділяє контейнер на 3 картки */
+    max-width: calc(30% - 40px); /* Встановлює максимальну ширину картки */
+    height: 500px; /* Висота картки */
+    margin-bottom: 20px; /* Відстань між рядками */
+    background: #ffffff; /* Білий фон картки */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .container {
+    height: 100%;
+}
+
+.wrapper .top {
+    height: 80%;
+    background-size: contain; /* Масштабувати зображення, щоб воно повністю влізло */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff; /* Додайте фон для пустих областей */
+}
+
+
+.wrapper .bottom {
+    height: 20%;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.wrapper .bottom .details h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.wrapper .bottom .details p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.wrapper .bottom .buy {
+    background: #16a085;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.wrapper .bottom .buy:hover {
+    background: #12876f;
+}
+

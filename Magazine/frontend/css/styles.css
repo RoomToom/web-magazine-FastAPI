@@ -1,0 +1,228 @@
+/* Основні змінні */
+:root {
+    --primary-color: #007BFF;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #f9f9f9;
+    --dark-grey: #333333;
+}
+
+/* Загальний стиль */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--grey);
+    color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--black);
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex: 1;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav__links a:hover {
+    text-decoration: underline;
+}
+
+.nav__auth {
+    margin-right: 10px;
+}
+
+.nav__auth button {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav__auth button:hover {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__bar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer__links a {
+    color: white; /* Встановлює білий колір для посилань */
+    text-decoration: none; /* Прибирає підкреслення */
+    font-size: 16px; /* Налаштування розміру шрифту */
+}
+
+.footer__links a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+.footer__socials a {
+    color: white; /* Встановлюємо білий колір для іконок */
+    font-size: 20px; /* Розмір іконок */
+    margin: 0 5px; /* Відступ між іконками */
+    text-decoration: none; /* Видаляємо підкреслення */
+    display: inline-block;
+    transition: color 0.3s ease; /* Анімація при наведенні */
+}
+
+.footer__socials a:hover {
+    color: #f0f0f0; /* Легкий ефект при наведенні */
+}
+
+/* Why Choose Us Section */
+.why-us {
+    padding: 50px 20px;
+    background-color: var(--grey);
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: var(--dark-grey);
+}
+
+/* Customer Reviews Section */
+.reviews {
+    padding: 50px 20px;
+    background-color: var(--grey);
+    text-align: center;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.review-card .stars {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.review-card i {
+    font-size: 18px;
+}
+
+.review-card h4 {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+
+

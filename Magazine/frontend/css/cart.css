@@ -1,0 +1,132 @@
+.cart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 300px; /* Встановлюємо мінімальну висоту */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 700px;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cart-item__details {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.cart-item__details h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.cart-item__details p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.quantity-controls button:hover {
+    color: #0056b3;
+}
+
+.cart-item__total {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#checkoutButton {
+    margin-bottom: auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#checkoutButton:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+
+.modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary h5 {
+    margin-bottom: 15px;
+}
+
+.summary .row {
+    margin-bottom: 10px;
+}
+
+.summary #totalAmount {
+    font-weight: bold;
+    font-size: 18px;
+}

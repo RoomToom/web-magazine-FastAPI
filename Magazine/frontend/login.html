@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <a href="index.html" class="nav__logo">tech.shop</a>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+            <div class="nav__auth">
+                <button id="authButton">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <div class="wrapper">
+        <div class="title"><span>Login Form</span></div>
+        <form id="loginForm">
+            <div class="row">
+                <i class="fas fa-user"></i>
+                <input type="email" id="email" placeholder="Email" required />
+            </div>
+            <div class="row">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Password" required />
+            </div>
+          <!--  <div class="pass"><a href="#">Forgot password?</a></div> -->
+            <div class="row button">
+                <input type="submit" value="Login" />
+            </div>
+            <div class="signup-link">
+                Don't have an account? <a id="registerButton" href="#">Register</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col">
+                <h4>About Us</h4>
+                <div class="footer__links">
+                    <a href="#">Our Story</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Support</h4>
+                <div class="footer__links">
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Follow Us</h4>
+                <div class="footer__socials">
+                    <a href="#"><i class="ri-facebook-line"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
