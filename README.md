@@ -1,26 +1,26 @@
 # Magazine Web Application
 
-Це веб-додаток для управління каталогом товарів та замовлень. Додаток включає функції реєстрації користувачів, управління продуктами, створення замовлень та управління кошиком покупця.
+This web application is designed for managing a product catalog and customer orders. It provides features for user registration, product management, order creation, and shopping cart functionality.
 
-## Можливості
-- **Реєстрація та аутентифікація користувачів**
-- **Управління продуктами**: перегляд, створення, оновлення та видалення товарів.
-- **Кошик покупця**: додавання, видалення та оновлення товарів у кошику.
-- **Система замовлень**: оформлення та управління замовленнями.
-- **API-документація**: доступна через Swagger UI за адресою `/docs`.
+## Features
+- **User Registration and Authentication**: Secure registration and login for users.
+- **Product Management**: Add, view, update, and delete products.
+- **Shopping Cart**: Add, remove, and update items in the cart.
+- **Order Management System**: Create and manage customer orders.
+- **API Documentation**: Automatically generated and available via Swagger UI at `/docs`.
 
-## Технології
-- **Мова програмування**: Python 3.10
-- **Фреймворки**:
-  - FastAPI: для побудови API
-  - SQLAlchemy: для роботи з базою даних
-  - Pydantic: для валідації даних
-- **База даних**: PostgreSQL
-- **Інструменти контейнеризації**: Docker, Docker Compose
-- **Веб-сервер**: Uvicorn
+## Technologies
+- **Programming Language**: Python 3.10
+- **Frameworks and Libraries**:
+  - FastAPI: For building a high-performance web API.
+  - SQLAlchemy: For database operations.
+  - Pydantic: For data validation and serialization.
+- **Database**: PostgreSQL
+- **Containerization Tools**: Docker, Docker Compose
+- **Web Server**: Uvicorn
 
-## Запуск додатку
-### Запуск через Uvicorn (локально)
-1. Клонувати репозиторій:
+## How to Run the Application
+### Local Run with Uvicorn
+1. Clone the repository:
    ```bash
    git clone https://github.com/roomtoom/web-magazine-FastAPI.git
